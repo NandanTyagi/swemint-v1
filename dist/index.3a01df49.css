@@ -98,7 +98,6 @@ small {
   width: 250px;
   height: 40px;
   color: var(--secondary-font-color);
-  font-family: futura;
   font-size: var(--button-font-size);
   border-color: var(--secondary-font-color);
   cursor: pointer;
