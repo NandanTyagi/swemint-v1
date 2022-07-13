@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.7.1/web3-provider.min.js"></script>
     <script type="module" src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Swemint.io | NFT</title>
   </head>
   <body>
     <div class="site-container">
+      <p class="msg" id="msg">Message</p>
       <div class="overlay-container"></div>
       <main class="main-container">
         <article class="text-container">
@@ -32,7 +34,7 @@
         </article>
         <article class="btn-container">
           <button class="btn" id="btn">CONNECT WALLET</button>
-          <p class="error" id="error"></p>
+          <p class="error" id="error">Error</p>
           <img
             src="./img/spinner.gif"
             alt="loading..."

@@ -65,7 +65,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 #countdown {
@@ -106,7 +106,7 @@ small {
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1.5rem 0 0.2rem 0;
 }
 
 .btn:hover {
@@ -119,6 +119,16 @@ small {
 .error {
   color: red;
   font-size: 0.8rem;
+  visibility:hidden;
+}
+
+.msg {
+  position:absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 0.8rem;
+  visibility:hidden;
+
 }
 
 .loading {
@@ -184,6 +194,7 @@ footer {
   body {
     background-image: url("/img/swemint-bg-1.jpg");
   }
+
   .title {
     font-size: 14rem;
   }
@@ -192,7 +203,7 @@ footer {
   }
 
   .btn {
-    margin: 1rem 0;
+    margin-top: 1rem;
   }
 
   footer .link {

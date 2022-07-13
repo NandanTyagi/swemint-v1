@@ -62,7 +62,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
 }
 
@@ -103,7 +103,7 @@ small {
   text-transform: uppercase;
   background: none;
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1.5rem 0 .2rem;
 }
 
 .btn:hover {
@@ -115,7 +115,16 @@ small {
 
 .error {
   color: red;
+  visibility: hidden;
   font-size: .8rem;
+}
+
+.msg {
+  visibility: hidden;
+  font-size: .8rem;
+  position: absolute;
+  top: 16px;
+  right: 24px;
 }
 
 .loading {
@@ -186,7 +195,7 @@ footer {
   }
 
   .btn {
-    margin: 1rem 0;
+    margin-top: 1rem;
   }
 
   footer .link {
