@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "digital-7";
+  src: url("./fonts/digital-7.ttf");
+}
+@font-face {
+  font-family: "iknu";
+  src: url("fonts/iknu.normal.ttf");
+}
+
+:root {
+  --primary-font-color: #fff;
+  --secondary-font-color: #74fcfd;
+  --title-font-size: 8rem;
+  --preamble-font-size: 0.8rem;
+  --footer-font-size: 0.5rem;
+  --footer-font-size-md: 0.6rem;
+  --button-font-size: 1rem;
+  --counter-font-size: 2rem;
+  --description-font-size: 0.8rem;
+  --font: serif;
+}
+
+body {
+  background-image: url("/img/bg-mobile.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: fit-content;
+  color: var(--primary-font-color);
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#countdown {
+  flex-direction: row;
+}
+
+.digit {
+  min-width:50px
+  
+}
+
+small {
+  font-size: var(--description-font-size);
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: "iknu";
+  font-size: var(--title-font-size);
+  font-weight: 300;
+}
+
+.preamble {
+  text-align: center;
+  font-size: var(--preamble-font-size);
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.btn {
+  font-family: "futura";
+  /* margin-top: 2rem; */
+  width: 250px;
+  height: 40px;
+  background: transparent;
+  color: var(--secondary-font-color);
+  font-size: var(--button-font-size);
+  border-color: var(--secondary-font-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
+  box-shadow: var(--secondary-font-color);
+}
+
+.error {
+  color: red;
+}
+
+.loading {
+  width: 60px;
+}
+
+.countdown-article {
+  display: flex;
+  gap: 0.5rem;;
+}
+
+.countdown-title {
+  color: var(--secondary-font-color);
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.countdown-container {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.glow {
+  font-family: "digital-7";
+  font-size: var(--counter-font-size);
+  color: var(--secondary-font-color);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--secondary-font-color),
+      0 0 10px var(--secondary-font-color), 0 0 15px #e60073, 0 0 20px #e60073,
+      0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 15px #ff4da6,
+      0 0 20px #ff4da6, 0 0 25px var(--secondary-font-color),
+      0 0 30px var(--secondary-font-color), 0 0 35px var(--secondary-font-color);
+  }
+}
+
+footer {
+  font-size: var(--footer-font-size);
+  height: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.link {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 682px) {
+  body {
+    background-image: url("/img/swemint-bg-1.jpg");
+  }
+  .title {
+    font-size: 14rem;
+  }
+  .preamble {
+    max-width: 110ch;
+  }
+
+  .btn {
+    margin: 1rem 0;
+  }
+
+  footer .link{
+    font-size: var(--footer-font-size-md);
+  }
+}
