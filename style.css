@@ -124,16 +124,16 @@ small {
 .error {
   color: red;
   font-size: 0.8rem;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .msg {
-  position:absolute;
+  position: absolute;
   top: 16px;
   right: 24px;
   font-size: 0.8rem;
-  visibility:hidden;
-
+  visibility: hidden;
+  text-transform: uppercase;
 }
 
 .loading {

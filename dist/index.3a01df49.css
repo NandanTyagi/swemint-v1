@@ -125,6 +125,7 @@ small {
 
 .msg {
   visibility: hidden;
+  text-transform: uppercase;
   font-size: .8rem;
   position: absolute;
   top: 16px;
