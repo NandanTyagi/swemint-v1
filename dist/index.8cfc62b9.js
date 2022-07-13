@@ -574,15 +574,15 @@ const init = async ()=>{
         serverUrl,
         appId
     });
-    user = Moralis.User.current();
-    if (user) {
-        console.log("logged in user: ", user);
+    let user1 = Moralis.User.current();
+    if (user1) {
+        console.log("logged in user: ", user1);
         btn.innerText = "Disconnect wallet";
     }
-    async function loginMetamask(user1) {
-        console.log("logged in user:", user1);
+    async function loginMetamask(user2) {
+        console.log("logged in user:", user2);
         // err.style.visibility = "hidden";
-        if (!user1) user1 = await Moralis.authenticate({
+        if (!user2) user2 = await Moralis.authenticate({
             signingMessage: "Log in using Moralis"
         }).then(function(user) {
             console.log("logged in user:", user);
@@ -602,9 +602,9 @@ const init = async ()=>{
     }
     async function loginWalletConnect() {
         err.innerHTML = "";
-        let user3 = Moralis.User.current();
-        if (!user3) {
-            const user2 = await Moralis.authenticate({
+        let user4 = Moralis.User.current();
+        if (!user4) {
+            const user3 = await Moralis.authenticate({
                 provider: "walletconnect",
                 mobileLinks: [
                     "rainbow",
