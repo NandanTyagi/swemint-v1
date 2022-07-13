@@ -101,15 +101,19 @@ small {
   border-color: var(--secondary-font-color);
   cursor: pointer;
   text-transform: uppercase;
+  opacity: 1;
   background: none;
   border-radius: 5px;
   margin: 1.5rem 0 .2rem;
+  transition: opacity 1s;
 }
 
 .btn:hover {
   cursor: pointer;
   box-shadow: var(--secondary-font-color);
-  transition: transform .2s;
+  opacity: .6;
+  background: #000;
+  transition: opacity .2s;
   transform: scale(1.01);
 }
 
@@ -200,6 +204,7 @@ footer {
 
   footer .link {
     font-size: var(--footer-font-size-md);
+    letter-spacing: .6rem;
   }
 }
 

@@ -107,6 +107,8 @@ small {
   text-transform: uppercase;
   border-radius: 5px;
   margin: 1.5rem 0 0.2rem 0;
+  transition: opacity 1s ease;
+  opacity: 1;
 }
 
 .btn:hover {
@@ -114,6 +116,9 @@ small {
   transform: scale(1.01);
   transition: transform 0.2s ease;
   box-shadow: var(--secondary-font-color);
+  background: black;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
 }
 
 .error {
@@ -208,5 +213,6 @@ footer {
 
   footer .link {
     font-size: var(--footer-font-size-md);
+    letter-spacing: 0.6rem;
   }
 }
