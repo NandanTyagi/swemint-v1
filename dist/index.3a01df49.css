@@ -38,7 +38,7 @@ body {
 }
 
 .site-container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   flex-direction: column;
   justify-content: space-between;

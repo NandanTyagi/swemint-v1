@@ -41,7 +41,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   padding: 0 2rem;
   position: relative;
   width: 100vw;
