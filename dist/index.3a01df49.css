@@ -102,7 +102,7 @@ small {
   text-transform: uppercase;
   background: none;
   border-radius: 5px;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .btn:hover {
@@ -114,6 +114,7 @@ small {
 
 .error {
   color: red;
+  font-size: .8rem;
 }
 
 .loading {
@@ -159,7 +160,10 @@ footer {
   height: 40px;
   text-align: center;
   letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
   font-weight: 100;
+  display: flex;
 }
 
 .link {

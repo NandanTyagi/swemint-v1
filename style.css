@@ -72,8 +72,7 @@ article {
 }
 
 .digit {
-  min-width:50px
-  
+  min-width: 50px;
 }
 
 small {
@@ -106,7 +105,7 @@ small {
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 5px;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .btn:hover {
@@ -118,6 +117,7 @@ small {
 
 .error {
   color: red;
+  font-size: 0.8rem;
 }
 
 .loading {
@@ -126,7 +126,7 @@ small {
 
 .countdown-article {
   display: flex;
-  gap: 0.5rem;;
+  gap: 0.5rem;
 }
 
 .countdown-title {
@@ -169,6 +169,9 @@ footer {
   text-align: center;
   letter-spacing: 2px;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
@@ -191,7 +194,7 @@ footer {
     margin: 1rem 0;
   }
 
-  footer .link{
+  footer .link {
     font-size: var(--footer-font-size-md);
   }
 }
