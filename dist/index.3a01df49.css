@@ -20,7 +20,7 @@
   --secondary-font-color: #74fcfd;
   --title-font-size: 8rem;
   --preamble-font-size: .8rem;
-  --footer-font-size: .4rem;
+  --footer-font-size: .5rem;
   --footer-font-size-md: .6rem;
   --button-font-size: 1rem;
   --counter-font-size: 2rem;
@@ -99,29 +99,33 @@ small {
   height: 40px;
   color: var(--secondary-font-color);
   font-size: var(--button-font-size);
-  border-color: var(--secondary-font-color);
+  border: .125rem solid var(--secondary-font-color);
   cursor: pointer;
   text-transform: uppercase;
   opacity: 1;
+  text-shadow: 0 0 .25rem;
+  will-change: transform box-shadow;
   background: none;
-  border-radius: 5px;
+  border-radius: .25rem;
   margin: 1.5rem 0 .2rem;
-  transition: opacity 1s;
+  transition: all .2s;
+  display: inline-block;
+  transform: scale(1);
+  box-shadow: inset 0 0 .25rem, 0 0 .25rem;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   cursor: pointer;
-  box-shadow: var(--secondary-font-color);
-  opacity: .6;
-  background: #000;
-  transition: opacity .2s;
+  outline: none;
+  transition: all .2s;
   transform: scale(1.01);
+  box-shadow: inset 0 0 .5rem, 0 0 .5rem;
 }
 
 .error {
   color: red;
   visibility: hidden;
-  font-size: .8rem;
+  font-size: .6rem;
 }
 
 .msg {
@@ -175,10 +179,10 @@ footer {
   font-size: var(--footer-font-size);
   height: 40px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: .06rem;
   justify-content: center;
   align-items: center;
-  font-weight: 100;
+  font-weight: 200;
   display: flex;
 }
 
@@ -204,8 +208,18 @@ footer {
     margin-top: 1rem;
   }
 
+  .error {
+    font-size: .8rem;
+  }
+
   footer .link {
     font-size: var(--footer-font-size-md);
+    letter-spacing: .4rem;
+  }
+}
+
+@media screen and (min-width: 845px) {
+  footer .link {
     letter-spacing: .6rem;
   }
 }

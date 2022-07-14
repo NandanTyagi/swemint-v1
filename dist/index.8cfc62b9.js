@@ -626,7 +626,7 @@ const init = async ()=>{
         await Moralis.User.logOut();
         console.log("logged out");
         btn.innerText = "Connect wallet";
-        msg.innerText = "Disconected";
+        msg.innerText = "Disconnected";
         setTimeout(()=>{
             msg.style.visibility = "hidden";
         }, 3000);
