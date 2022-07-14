@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url("/img/bg-mobile.png");
+  background-image: url("/img/bg-1-mobile.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body {
   left: 0;
   right: 0;
   background: black;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -190,7 +190,7 @@ footer {
   font-size: var(--footer-font-size);
   height: 40px;
   text-align: center;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.09rem;
   font-weight: 200;
   display: flex;
   justify-content: center;

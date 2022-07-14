@@ -33,7 +33,7 @@ body {
   height: fit-content;
   color: var(--primary-font-color);
   min-height: 100vh;
-  background-image: url("bg-mobile.23111a81.png");
+  background-image: url("bg-1-mobile.baf9f032.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +53,7 @@ body {
 }
 
 .overlay-container {
-  opacity: .6;
+  opacity: .4;
   z-index: -1;
   background: #000;
   position: absolute;
@@ -179,7 +179,7 @@ footer {
   font-size: var(--footer-font-size);
   height: 40px;
   text-align: center;
-  letter-spacing: .06rem;
+  letter-spacing: .09rem;
   justify-content: center;
   align-items: center;
   font-weight: 200;
