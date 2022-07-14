@@ -44,7 +44,7 @@ const init = async () => {
 
   Moralis.start({ serverUrl, appId });
 
-  user = Moralis.User.current();
+  let user = Moralis.User.current();
 
   if (user) {
     console.log("logged in user: ", user);
